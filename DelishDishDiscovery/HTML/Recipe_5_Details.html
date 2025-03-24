@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="content-container">
+    <img class="logo" src="logo.png" alt="logo">
+    <h1>Welcome to DelishDishDiscovery!</h1>
+    <nav>
+      <ul>
+        <li><button id="homeButton">Home</button></li>
+        <li><button id="recipesButton">Recipes</button></li>
+        <li><button id="guideButton">Guide</button></li>
+        <li><button id="authorsButton">Authors</button></li>
+        <li><button id="aboutButton">About</button></li>
+        <li><button id="contactButton">Contact Us</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-container">
+    <main>
+      <section>
+        <h2 style="text-align: left;" class="highlighted-title">Healthy Spaghetti Bolognese</h2>
+        <div class="recipe-favorite">
+          <div class="favorite-container">
+            <img class="fotos" src="bolognese.jpg" alt="Recipe Image 5">
+            <button class="favorite-button" onclick="addToFavorites(this)"></button>
+            <span class="favorite-message"></span>
+          </div>
+        </div>
+        <h3 class="other-title">Ingredients:</h3>
+        <ul>
+          <li>1 tablespoon olive oil</li>
+          <li>200 grams extra lean mince</li>
+          <li>1 medium onion</li>
+          <li>80 grams shiitake mushrooms</li>
+          <li>1 medium carrot (grated)</li>
+          <li>400 grams canned chopped tomatoes</li>
+          <li>250 ml low salt vegetable stock</li>
+          <li>2 tablespoons sundried tomato paste</li>
+          <li>1 bay leaf</li>
+          <li>300 grams wholewheat spaghetti</li>
+          <li>2 tablespoons fresh parsley</li>
+        </ul>
+        <h3 class="other-title">Instructions:</h3>
+        <p>        
+          <ol>
+            <li>Heat the olive oil in a large saucepan and fry the onions and mince until the mince has browned.</li>
+            <li>Add the mushrooms, carrot, canned tomatoes, stock, tomato paste and bay leaf. Bring to the boil and then let simmers for 15-20mins or until the sauce has thickened.</li>
+            <li>Place the spaghetti in a saucepan of boiling water and cook until the spaghetti is soft.</li>
+            <li>Divide the spaghetti into four portions and serve with the Bolognese sauce on top.</li>
+            <li>Sprinkle with the fresh parsley and serve.</li>
+          </ol>
+        </p>
+        <br>     
+          <div>
+            <input type="text" id="usernameInput" placeholder="Your Name (The comment you made will be displayed with this name.)">
+            <textarea id="commentInput" placeholder="Add your comment here"></textarea>
+            <button id="submitComment">Submit Comment</button>
+          </div>
+          <div id="commentsSection" class="comments-list">
+          </div>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; DelishDishDiscovery</p>
+    </footer>
+  </div>
+</body>
+</html>
