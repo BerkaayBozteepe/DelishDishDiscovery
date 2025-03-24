@@ -32,4 +32,4 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
    
 ## 📸 Ekran Görüntüsü
 
-![Ana Sayfa](screenshots/homepage.jpg)
+![Ana Sayfa](DelishDishDiscovery/screenshots/homepage.jpg)
